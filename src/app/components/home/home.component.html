@@ -1,0 +1,48 @@
+<div class="home">
+  <div class="head">
+      <h2>You are new travell mate</h2>
+      <p>Book Hotels & Flights at The Best Price</p>
+      <button class="btn btn-outline-success" (click) = "go()">See Our Hotels !</button>
+  </div>
+   <div class="book">
+      <div class="container">
+        <form #data = "ngForm">
+            <h3 class="my-2">Book Now !</h3>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="controls">
+                  <label><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Going To</label>
+                  <select ngModel #city="ngModel" name="city">
+                    <option *ngFor = "let x of Data"> {{x.city |uppercase}}</option>
+                  </select>
+                </div> 
+              </div>
+              <div class="col-md-3">
+                <div class="controls">
+                  <label><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                  <input id="ar" type="date" ngModel #arrive="ngModel" name="arrive"/>
+                </div>  
+              </div>
+              <div class="col-md-3">
+                <div class="controls">
+                  <label><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                  <input id="de" type="date" ngModel #depart="ngModel" (blur) = "calc(data)" name="depart"/>
+                </div>      
+              </div>
+              <div class="col-md-2">
+                      <div class="controls">
+                          <label for="depart" class="label-date"><i class="fas fa-moon"></i>&nbsp;&nbsp;Days</label>
+                        <input type="text" readonly value="{{days}}" name="days"/>
+                      </div>      
+              </div>
+              <div class="col-md-1">
+                <div class="controls">
+                   <button class="btn btn-outline-success" type="submit" (click)="go()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+</div>
+

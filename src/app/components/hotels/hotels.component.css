@@ -1,0 +1,52 @@
+.head{
+    margin: 5% auto;
+    text-align: center;
+    text-transform: capitalize;
+    color: #e91e63;
+}
+input {
+    width: 50%;
+}
+table{
+    width: 70%;
+    margin: 50px auto;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-image: url("/assets/6.jpeg");
+}
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+th{
+    color: #fff;
+}
+.name{
+    font-weight: 900;
+    color: #fff;
+}
+button{
+    margin: 10px 40% !important;
+    width: 20%;
+}
+/*Responsive*/
+@media (max-width : 766px) {
+    .head{
+        margin: 30px auto 15px;
+        font-size: 18px;
+    }
+    header input{
+        width: 80% !important;
+    }
+    table {
+        width: 80%;
+        font-size: 16px;
+    }
+    button{
+        margin: 20px 20% !important;
+        width: 50%;
+    }
+}

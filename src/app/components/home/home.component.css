@@ -1,0 +1,98 @@
+.home{
+    height: 800px;
+    background-image: url("~/assets/6.jpeg");
+    background-size: 100% 100%;
+    overflow: auto;
+}
+.head{
+    margin: 10% auto 5%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+.head h2{
+    font-size: 40px;
+}
+.head p{
+    font-size: 25px;
+    color: #f00;
+}
+.head button {
+    width: 20% !important;
+    font-size: 19px;
+}
+.book {
+    padding: 10px 0;
+    text-align: center;
+}
+form {
+    border: 1px solid #fff;
+    padding: 40px;
+    text-align: center;
+}
+label{
+    color: #000;
+    font-weight: 600;
+}
+.controls{
+	text-align: left;
+	position: relative;
+    }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+button,
+select{
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #09c;
+            width: 100%;
+            margin-bottom: 18px;
+            color: #f00;
+            font-family: 'Lato', 'sans-serif';
+            font-size: 16px;
+            font-weight: 300;
+    }
+i {
+    color: #f00;
+}
+ form button{
+    color: #f00;
+    text-align: center;
+    padding: 7px;
+    margin-top: 60% !important;
+}
+/*Responsive*/
+@media (max-width: 766px) {
+    .head h2{
+        font-size: 22px;
+    }
+    .head p{
+        font-size: 18px;
+    }
+    .head button {
+        width: 50% !important;
+    }
+    .book{
+        padding: 40px 0;
+    }
+    form {
+        border: 1px solid #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    form button{
+        color: #f00;
+        text-align: center;
+        padding: 7px;
+        margin-top:5% !important;
+    }
+}
+@media (max-width:991px) {
+    form button{
+        padding: 7px;
+        margin-top: 10% !important;
+}
+}

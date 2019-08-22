@@ -1,0 +1,28 @@
+<header>
+  <div class="container">
+
+    <div class="head">
+      <h2>Our Best Hotels</h2>
+    </div>
+
+    <div class="form-group my-5">
+        <input type="text" [(ngModel)] = 'term' class="form-control m-auto " placeholder="Search Cities">
+      </div>
+
+      <table *ngFor = "let x of data | search:term">
+          <tr>
+            <th>Hotel Name :</th>
+            <td class="name">{{x.name}}</td>
+          </tr>
+          <tr>
+            <th>City :</th>
+            <td>{{x.city |uppercase}}</td>
+          </tr>
+          <tr>
+            <th>Price : </th>
+            <td> {{x.price|currency}} per Day </td>
+          </tr>
+    </table>  
+    <button class="btn btn-outline-success m-auto" (click) = "back()"> Back To Home !</button>
+  </div>
+</header>
